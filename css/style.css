@@ -28,8 +28,9 @@ body {
 }
 
 @keyframes dev-effect {
-    to{
-        transform: translateY(20px);
+    
+    to {
+        opacity: .4;
     }
 }
 
@@ -135,14 +136,31 @@ main .about .about-content{
 .about-content .box-right h1 {
     font-size: 4rem;
     color: #fff;
+    
 }
 
 
 
 .about-content .box-right span {
     font-size: 3.5rem;
-    color: #3f2b96;
-    animation: dev-effect 1s ease-in alternate infinite;
+    color: #fff;
+    animation: dev-effect 1s ease alternate infinite;
     display: grid;
+    text-shadow: 1px -1px 1px #3f2b96,
+    2px 2px 0px #3f2b96,
+    6px 6px 10px #3f2b96;
+    
 }
 
+
+/* @media   *******************************/
+
+@media (max-width: 1640px) {
+    .about-content .box-image img {
+        width: 400px;
+        height: 400px;
+}
+    .about-content .box-right span {
+        font-size: 3rem;
+    }
+}

@@ -1,5 +1,5 @@
 const el = document.querySelector('#welcome');
-const text = "Olá, Seja bem-vindo ao meu Portfólio!"
+const text = "Seja bem-vindo ao meu Portfólio!"
 const interval = 200;
 
 const showText = (el, text, interval) => {
