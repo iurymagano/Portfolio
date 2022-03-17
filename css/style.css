@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100&display=swap');
 
+
+/* Global   *******************************/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --purple: #3f2b96;
 }
 
 body {
@@ -20,10 +30,10 @@ body {
 
 @keyframes profile-effect {
     0% {
-        box-shadow:  0px 6px 10px #3f2b96;
+        box-shadow:  0px 6px 10px var(--purple);
     }
     100% {
-        box-shadow: 1px 1px 40px 1px #3f2b96;
+        box-shadow: 1px 1px 40px 1px var(--purple);
     }
 }
 
@@ -34,15 +44,11 @@ body {
     }
 }
 
-
-
 /* Menu   *******************************/
 
 header {
-    background-color: rgba(11, 11, 12, 0.9);
     padding: 10px 0;
 }
-
 
 header .menu .menu-content{
     display: flex;
@@ -62,18 +68,14 @@ header .menu .menu-content{
     color: #fff;
 }
 
-
-
 .menu .menu-content .menu-logo img {
     width: 40px;
     height: 40px;
 }
 
-
-
-
 .menu-content .navbar-box ul {
     display: flex;
+    list-style: none;
 
 }
 
@@ -88,36 +90,39 @@ header .menu .menu-content{
     color: #fff;
     position: relative;
     padding: 0 10px;
-
 }
+
 .menu-content .navbar-box li a::after {
     content: "";
     position: absolute;
-    background-color: #3f2b96;
-    height: 4px;
+    background-color: var(--purple);
+    height: 5px;
     width: 0;
     left: 0;
     bottom: -10px;
     transition: 0.3s;
+    border-radius: 5px;
 }
 
 .menu-content .navbar-box li a:hover::after {
     width: 100%;
 }
 
-/* Main   *******************************/
+/* Main presentation  *******************************/
 
 main {
-    margin-top: 5rem;
+    padding-top: 5rem;
+    height: 100vh;
+
 }
 
-main .about .about-content{
+main .presentation .presentation-content{
     display: flex;
     align-items: center;
 
 }
 
-.about-content .box-image img {
+.presentation-content .box-image img {
     width: 500px;
     height: 500px;
 
@@ -127,40 +132,84 @@ main .about .about-content{
 
 }
 
-
-
-.about-content .box-right {
+.presentation-content .box-right {
     margin-left: 5.2rem;
 }
 
-.about-content .box-right h1 {
+.presentation-content .box-right h1 {
     font-size: 4rem;
     color: #fff;
-    
 }
 
-
-
-.about-content .box-right span {
+.presentation-content .box-right span {
     font-size: 3.5rem;
     color: #fff;
     animation: dev-effect 1s ease alternate infinite;
     display: grid;
-    text-shadow: 1px -1px 1px #3f2b96,
-    2px 2px 0px #3f2b96,
-    6px 6px 10px #3f2b96;
+    text-shadow: 1px -1px 1px var(--purple),
+    2px 2px 0px var(--purple),
+    6px 6px 10px var(--purple);
     
+}
+
+/* About   *******************************/
+
+
+section  {
+    margin-bottom: 200px;
+}
+
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    background: var(--purple);
+    
+    padding: 3rem 6rem;
+    border-radius: 0 5rem;
+    color: #FFF;
+    width: 70%;
+    text-align: center;
+
+    box-shadow: 
+    rgba(63, 43, 150, 0.4) 5px 5px,
+     rgba(63, 43, 150, 0.3) 10px 10px,
+      rgba(63, 43, 150, 0.2) 15px 15px,
+       rgba(63, 43, 150, 0.1) 20px 20px,
+        rgba(63, 43, 150, 0.05) 25px 25px;
+}
+
+.about-content h1 {
+    font-size: 3.5rem;
+    text-shadow:
+    2px 6px 20px #000;
+    
+}
+
+.about-content p{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    text-shadow:
+    2px 6px 6px #000;
+    text-align: justify;
 }
 
 
 /* @media   *******************************/
 
 @media (max-width: 1640px) {
-    .about-content .box-image img {
+    .presentation-content .box-image img {
         width: 400px;
         height: 400px;
 }
-    .about-content .box-right span {
+    .presentation-content .box-right span {
         font-size: 3rem;
     }
 }
