@@ -44,6 +44,16 @@ body {
     }
 }
 
+
+@keyframes border-animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(350deg);
+    }
+}
+
 /* Menu   *******************************/
 
 header {
@@ -169,92 +179,40 @@ section  {
 }
 
 .about-content {
-    background: var(--purple);
-    
     padding: 3rem 6rem;
     border-radius: 0 5rem;
-    color: #FFF;
-    width: 70%;
-    text-align: center;
-
-    box-shadow: 
-    rgba(63, 43, 150, 0.4) 5px 5px,
-     rgba(63, 43, 150, 0.3) 10px 10px,
-      rgba(63, 43, 150, 0.2) 15px 15px,
-       rgba(63, 43, 150, 0.1) 20px 20px,
-        rgba(63, 43, 150, 0.05) 25px 25px;
-}
-
-.about-content h1 {
-    font-size: 3.2rem;
-    text-shadow:
-    2px 6px 20px #000;
-    
-}
-
-.about-content p{
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    padding-bottom: 2rem;
-    text-shadow:
-    2px 6px 6px #000;
-    text-align: justify;
-}
-
-
-
-/*  teste    */
-
-.border {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.border-content {
-    
-    padding: 3rem 6rem;
-    border-radius: 0 5rem;
-    color: #FFF;
     width: 70%;
     text-align: center;
     position: relative;
     overflow: hidden;
     background: #fff;
+    color: #FFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.border-content::before {
+.about-content::before {
     content: "";
     position: absolute;
     width: 200px;
     height: 1100px;
-    background: var(--purple);
-    animation: animate 4s linear infinite;
+    background: var(--purple) ;
+    animation: border-animate 4s linear infinite;
     border-radius: 0 5rem;
-
 }
 
-.border-content::after {
+.about-content::after {
     content: "";
     position: absolute;
-    inset: 6px;
+    inset: 4px;
     background: #0c0c0c;
     border-radius: 0 5rem;
 }
 
-
-@keyframes animate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(350deg);
-    }
-}
-
-.border-content h1 {
+.about-content h1 {
     font-size: 3.2rem;
     text-shadow:
     2px 6px 20px #000;
@@ -262,7 +220,7 @@ section  {
     position: relative;
 }
 
-.border-content p{
+.about-content p{
     font-size: 1.5rem;
     margin-top: 2rem;
     padding-bottom: 2rem;
@@ -288,3 +246,5 @@ section  {
         font-size: 3rem;
     }
 }
+
+
