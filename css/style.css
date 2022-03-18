@@ -247,4 +247,106 @@ section  {
     }
 }
 
+@media (max-width: 1224px) {
+    .container {
+        max-width: 90%;
+    }
+    .presentation-content {
+        padding-top: 4rem;
+    }
+    .presentation-content .box-image img {
+        width: 320px;
+        height: 320px;
+    }
+    .presentation-content .box-right h1 {
+        font-size: 3.1rem;
+    }
+    .presentation-content .box-right span{
+        font-size: 2.4rem;
+    }
+    .about-content h1 {
+        font-size: 2.2rem;
+    }
+    .about-content p {
+        font-size: 1.3rem;
+    }
+}
 
+@media (max-width: 768px) {
+    .presentation-content .box-image img {
+        width: 250px;
+        height: 250px;
+    }
+    .presentation-content .box-right h1 {
+        font-size: 2.2rem;
+    }
+    .presentation-content .box-right span{
+        font-size: 1.6rem;
+    }
+    .about-content {
+        width: 90%;
+    }
+    .about-content h1 {
+        font-size: 2.2rem;
+    }
+    .about-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    main {
+        padding-top: 9rem;
+    }
+    .navbar-box {
+        display: none;
+    }
+    .presentation-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .presentation-content .box-image img {
+        width: 250px;
+        height: 250px;
+    }
+    .presentation-content .box-right {
+        margin: 20px 0;
+        padding-left: 10px;
+        
+    }
+    .presentation-content .box-right h1 {
+        font-size: 2.6rem;
+    }
+    .presentation-content .box-right span{
+        font-size: 1.8rem;
+        margin-top: 10px;
+    }
+    .about-content {
+        padding: 20px;
+    }
+    .about-content h1 {
+        font-size: 1.5rem;
+    }
+    .about-content p {
+        font-size: 1rem;
+    }
+
+    
+}
+
+@media(max-width: 375px) {
+    
+    .presentation-content .box-right h1 {
+        font-size: 2.2rem;
+    }
+    .presentation-content .box-right span {
+        font-size: 1.5rem;
+    }
+   
+    .about-content p {
+        font-size: .9rem;
+    }
+
+    
+}
