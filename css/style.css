@@ -295,9 +295,6 @@ section  {
 }
 
 @media (max-width: 425px) {
-    main {
-        padding-top: 9rem;
-    }
     .navbar-box {
         display: none;
     }
