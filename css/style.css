@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    max-width: 80%;
+    max-width: 85%;
     margin: auto;
 }
 
@@ -228,6 +228,9 @@ section  {
     position: relative;
     z-index: 10;
 }
+
+
+
 /* Projetos   *******************************/
 
 .projects {
@@ -372,10 +375,10 @@ section  {
         
     }
     .presentation-content .box-right h1 {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
     }
     .presentation-content .box-right span{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         margin-top: 10px;
     }
     .about-content {
@@ -389,6 +392,34 @@ section  {
         font-size: 1rem;
     }
 
+    /* Projetos    *******************/
+    .projects h1 {
+        font-size: 2.4rem;
+    }
+
+    .projects-cards {
+        gap: 40px;
+    }
+
+    .card {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .card-img img {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .card-right h2 {
+        font-size: 2rem;
+    }
+    .card .card-button {
+        margin-bottom: 10px;
+    }
+    
     
 }
 
