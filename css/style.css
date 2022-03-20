@@ -166,7 +166,7 @@ main .presentation .presentation-content{
 
 #about {
     margin-bottom: 200px;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 .about {
@@ -263,10 +263,8 @@ main .presentation .presentation-content{
 .card-img img {
     width: 250px;
     object-fit: cover;
-    border-radius: 10px;
-    
+    border-radius: 10px;  
 }
-
 
 .card-right {
     padding-left: 30px ;
