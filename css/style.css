@@ -147,7 +147,7 @@ main .presentation .presentation-content{
 }
 
 .presentation-content .box-right h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #fff;
 }
 
@@ -235,6 +235,7 @@ main .presentation .presentation-content{
 
 .projects {
     color:#fff;
+    margin-bottom: 200px;
 }
 
 .projects h1 {
@@ -301,6 +302,61 @@ main .presentation .presentation-content{
     margin-right: 20px;
 }
 
+/* Conhecimentos  *******************************/
+#conhecimentos {
+    margin-bottom: 200px;
+}
+
+#conhecimentos h1 {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+
+.conhecimentos-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box-conhecimentos {
+    border-radius: 10px;
+    border-bottom: 4px solid #fff;
+    padding: 40px 30px;
+    background-color: #3f2b96;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.box-conhecimentos:hover {
+    background-color: #0c0c0c;
+    box-shadow: 1px 1px 10px 3px var(--purple);
+    transition: .4s;
+}
+
+.box-conhecimentos span {
+    color: #fff;
+    position: absolute;
+    font-size: 1rem;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* @media   *******************************/
@@ -337,6 +393,9 @@ main .presentation .presentation-content{
     }
     .about-content p {
         font-size: 1.3rem;
+    }
+    #conhecimentos h1 {
+        font-size: 2rem;
     }
 }
 
