@@ -394,9 +394,7 @@ main .presentation .presentation-content{
     .about-content p {
         font-size: 1.3rem;
     }
-    #conhecimentos h1 {
-        font-size: 2rem;
-    }
+    
 }
 
 @media (max-width: 768px) {
@@ -419,6 +417,7 @@ main .presentation .presentation-content{
     .about-content p {
         font-size: 1.2rem;
     }
+    
 }
 
 @media (max-width: 426px) {
@@ -483,6 +482,9 @@ main .presentation .presentation-content{
     }
     .card .card-button {
         margin-bottom: 10px;
+    }
+    #conhecimentos h1 {
+        font-size: 2rem;
     }
     
     
