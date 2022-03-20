@@ -1,6 +1,6 @@
 const el = document.querySelector('#welcome');
 const text = "Seja bem-vindo ao meu portfólio!"
-const interval = 200;
+const interval = 100;
 
 const img = document.querySelector('.img-projeto');
 

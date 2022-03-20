@@ -123,6 +123,7 @@ header .menu .menu-content{
 main {
     padding-top: 5rem;
     height: 100vh;
+    
 
 }
 
@@ -131,6 +132,15 @@ main .presentation .presentation-content{
     align-items: center;
 
 }
+
+.button-menu {
+    width: 44px;
+    cursor: pointer;
+    display: none;
+
+}
+
+
 
 .presentation-content .box-image img {
     width: 500px;
@@ -147,12 +157,12 @@ main .presentation .presentation-content{
 }
 
 .presentation-content .box-right h1 {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     color: #fff;
 }
 
 .presentation-content .box-right span {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     color: #fff;
     animation: dev-effect 1s ease alternate infinite;
     display: grid;
@@ -366,15 +376,16 @@ main .presentation .presentation-content{
         width: 400px;
         height: 400px;
 }
-    .presentation-content .box-right span {
-        font-size: 3rem;
-    }
+    
 }
 
 @media (max-width: 1224px) {
     .container {
         max-width: 90%;
     }
+
+    
+
     .presentation-content {
         padding-top: 4rem;
     }
@@ -486,7 +497,12 @@ main .presentation .presentation-content{
     #conhecimentos h1 {
         font-size: 2rem;
     }
-    
+    .button-menu {
+        display: flex;
+        position: fixed;
+        right: 10px;
+        z-index: 999;
+    }
     
 }
 
