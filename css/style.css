@@ -164,9 +164,9 @@ main .presentation .presentation-content{
 
 /* About   *******************************/
 
-
-section  {
+#about {
     margin-bottom: 200px;
+    padding-top: 200px;
 }
 
 .about {
@@ -288,7 +288,15 @@ section  {
     cursor: pointer;
     font-weight: 700;
     margin-top: 10px;
+    font-size: 1rem;
+    border: 1px solid #fff;
+}
 
+.card-right button:hover {
+    background: #0c0c0c;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: .5s;
 }
 
 .card-right button:first-child {
