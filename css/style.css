@@ -459,6 +459,7 @@ footer {
     height: 400px;
     background: #260d59;
     padding-top: 20px;
+    width: 100%;
 }
 
 footer h1 {
@@ -662,7 +663,7 @@ footer h1 {
     .button-menu {
         display: flex;
         position: fixed;
-        right: 10px;
+        right: 50px;
         z-index: 999;
     }
     

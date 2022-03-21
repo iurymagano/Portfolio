@@ -68,7 +68,7 @@ animeScroll();
 if(target.length) {
     window.addEventListener('scroll', debounce(() => {
         animeScroll()
-    }, 200));
+    }, 100));
 }
 
 showText(el, text, interval);
