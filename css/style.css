@@ -17,6 +17,7 @@ html {
 }
 
 body {
+    width: 100%;
     background: #0c0c0c;
     font-family: 'Roboto', sans-serif;
 }
@@ -110,6 +111,7 @@ body {
 
 header {
     padding: 10px 0;
+    width: 100%;
 }
 
 .menu-content {
@@ -179,6 +181,7 @@ header .menu .menu-content{
 main {
     padding-top: 5rem;
     height: 100vh;
+    width: 100%;
 
 }
 
@@ -272,6 +275,7 @@ main .presentation .presentation-content{
 #about {
     margin-bottom: 200px;
     padding-top: 100px;
+    width: 100%;
 }
 
 .about {
@@ -337,10 +341,13 @@ main .presentation .presentation-content{
 
 
 /* Projetos   *******************************/
-
+#project {
+    width: 100%;
+}
 .projects {
     color:#fff;
     margin-bottom: 200px;
+    
 }
 
 .projects h1 {
@@ -410,6 +417,7 @@ main .presentation .presentation-content{
 /* Conhecimentos  *******************************/
 #conhecimentos {
     margin-bottom: 300px;
+    width: 100%;
 }
 
 #conhecimentos h1 {
@@ -666,7 +674,18 @@ footer h1 {
         right: 20px;
         z-index: 999;
     }
+    footer {
+        width: 100%;
+    }
+
+    /* animation     ***********************/
+    [data-anime="left"] {
+        transform: translate3d(0x, 50, 0);
+    }
     
+    [data-anime="right"] {
+        transform: translate3d(0, 50px, 0);
+    }
 }
 
 @media (max-width: 378px) {
