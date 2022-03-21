@@ -515,6 +515,30 @@ footer h1 {
     .navbar-box {
         display: none;
     }
+    .navbar-box.active {
+        display: flex;
+        background-color: #260d59;
+        position: absolute;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        
+    }
+    body {
+        position: relative;
+        
+    }
+    
+    .navbar-box nav ul{
+        display: flex;
+        flex-direction: column;
+    }
     .presentation-content {
         display: flex;
         flex-direction: column;
