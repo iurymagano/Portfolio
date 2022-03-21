@@ -25,6 +25,34 @@ body {
     max-width: 85%;
     margin: auto;
 }
+/* Animação   *******************************/
+
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="top"] {
+    transform: translate3d(0, -50px, 0);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
 
 /* @keyframes   *******************************/
 
@@ -34,6 +62,7 @@ body {
     }
     100% {
         box-shadow: 1px 1px 40px 1px var(--purple);
+        transform: rotate(-10deg);
     }
 }
 
@@ -54,10 +83,37 @@ body {
     }
 }
 
+@keyframes animation-text-dev {
+    
+    from {
+        transform: translateX(400px);
+        opacity: .1;
+        
+    }
+}
+
+@keyframes button-git {
+    from {
+        opacity: .1;
+        transform: translateY(400px);
+    }
+}
+
+@keyframes menu-animate {
+    from {
+        opacity: .1;
+        transform: translateX(-400px);
+    }
+}
+
 /* Menu   *******************************/
 
 header {
     padding: 10px 0;
+}
+
+.menu-content {
+    animation: menu-animate 1s;
 }
 
 header .menu .menu-content{
@@ -123,9 +179,9 @@ header .menu .menu-content{
 main {
     padding-top: 5rem;
     height: 100vh;
-    
 
 }
+
 
 main .presentation .presentation-content{
     display: flex;
@@ -145,9 +201,7 @@ main .presentation .presentation-content{
 .presentation-content .box-image img {
     width: 500px;
     height: 500px;
-
-    animation: profile-effect 1s infinite alternate-reverse linear;
-    
+    animation: profile-effect 2s infinite alternate-reverse linear;
     border-radius: 50%;
 
 }
@@ -159,6 +213,7 @@ main .presentation .presentation-content{
 .presentation-content .box-right h1 {
     font-size: 2.8rem;
     color: #fff;
+    
 }
 
 .presentation-content .box-right span {
@@ -169,11 +224,14 @@ main .presentation .presentation-content{
     text-shadow: 1px -1px 1px var(--purple),
     2px 2px 0px var(--purple),
     6px 6px 10px var(--purple);
+
+    animation: animation-text-dev 1s;
     
 }
 
 .box-button {
     margin-top: 30px;
+    animation: button-git 1s;
     
 }
 .box-button a {
