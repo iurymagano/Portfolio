@@ -466,15 +466,17 @@ main .presentation .presentation-content{
 /* Contato   *******************************/
 
 footer {
-    height: 400px;
+    height: 300px;
     background: #260d59;
     padding-top: 20px;
     width: 100%;
+    border-top: 4px solid #fff;
+    border-radius: 10px;
 }
 
 footer h1 {
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     font-size: 3rem;
     color: #fff;
 }
@@ -524,7 +526,7 @@ footer h1 {
     .presentation-content .box-image img {
         width: 400px;
         height: 400px;
-}
+    }
     
 }
 
@@ -532,8 +534,6 @@ footer h1 {
     .container {
         max-width: 90%;
     }
-
-    
 
     .presentation-content {
         padding-top: 4rem;
@@ -554,7 +554,6 @@ footer h1 {
     .about-content p {
         font-size: 1.3rem;
     }
-    
 }
 
 @media (max-width: 768px) {
